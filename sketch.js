@@ -20,8 +20,6 @@ var hr = map(h, 0, 24, 0, 720)
 
 		background(0);
 			noStroke();
-			translate(width/2, height/2);
-			rotate(-90);
 
 			// Lauf-Variable x definiert
 			var x = 0;
