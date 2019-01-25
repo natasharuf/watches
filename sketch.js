@@ -1,9 +1,9 @@
-let myFont;
+let myFont="";
 
 
-/*function preload() {
-  myFont = loadFont('assets/SanFranciscoDisplay-Light.otf');
-}*/
+function preload() {
+  myFont = loadFont('assets/Orbitron-Regular.ttf');
+}
 
 
 function setup() {
@@ -12,7 +12,6 @@ function setup() {
 	colorMode(HSL);
 	angleMode(DEGREES);
 	textAlign(CENTER, CENTER);
-
 
 }
 
@@ -57,10 +56,10 @@ var hr = map(h, 0, 24, 0, 720)
 					 		fill(0);
 							ellipse(0,0, 280,280, 280, 360);
 
-			    			pop();/* 4. transformation koordinatensystem rückgängig, sonst ist die schrift gedreht */
+			    		pop();/* 4. transformation koordinatensystem rückgängig, sonst ist die schrift gedreht */
 							fill(255);/* 2. schrift auf weiss setzen, sonst sieht man sie nicht*/
-						//textFont(myFont);
-							textSize(15);
+							textFont(myFont);
+							textSize(25);
 							text(h+":"+m+":"+s, width/2, height/2);/*3. konkatinierung, es fehlte ein + nach min */
 
 					}
