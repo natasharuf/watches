@@ -59,12 +59,12 @@ var hr = map(h, 0, 24, 0, 720)
 
 			    			pop();/* 4. transformation koordinatensystem rückgängig, sonst ist die schrift gedreht */
 							fill(255);/* 2. schrift auf weiss setzen, sonst sieht man sie nicht*/
-						/*	textFont(myFont);
-							textSize(20);*/
-							text(hr+":"+min+":"+sec, width/2, height/2);/*3. konkatinierung, es fehlte ein + nach min */
-
+						//textFont(myFont);
+							textSize(15);
+							text(h+":"+m+":"+s, width/2, height/2);/*3. konkatinierung, es fehlte ein + nach min */
 
 					}
+
 
 					//var d = new Date();
 					//document.getElementById("demo").innerHTML = d.toString();
